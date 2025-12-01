@@ -16,17 +16,20 @@ Cette scène A-Frame met en place un environnement 3D interactif inspiré de Spr
 
 ## Environnement
 
-- Ciel panoramique avec `<a-sky>`.
-- Sol d’herbe et route texturés (maps de couleur, normal, roughness, AO, répétition des textures).
-- Ligne jaune au centre de la route pour un rendu « route américaine ».
+- **Ciel** : une image panoramique **360°** appliquée à un `<a-sky>`, donnant l’illusion d’un environnement immersif autour du joueur.
+- **Sol en herbe** : un grand plan texturé avec **une texture d’herbe importée** (grass_color, normal, roughness, AO).  
+  La texture est répétée pour éviter les effets de flou ou de mosaïque.
+- **Route** : second plan texturé (asphalte PBR) avec une ligne jaune au centre pour rappeler une route américaine.
+- **Nuages** : entités générées avec `cloud` et animées avec `cloud-move` pour donner de la vie au ciel.
 
 ## Modèles 3D (GLB)
 
 La scène charge différents modèles GLB placés dans le dossier `models/` :
 
-- Personnages : Homer, Bart, Chef Wiggum, Delphox, Itachi, zombie, Transformers.
+- Personnages : Homer, Bart, Chef Wiggum, Delphox, Itachi, Zombie, Transformers.
 - Décors : maison des Simpson, maison américaine, étang cartoon, cathédrale de Cologne.
 - Objets : voiture (Porsche 911), OVNI, etc.
+- Sur la façade de la **maison jaune**, un **poster de Bart** est affiché grâce à un `<a-plane>` texturé, ce qui ajoute un détail visuel lié à l’univers des Simpson.
 - Certains modèles sont animés via `animation-mixer` (boucle d’animation).
 
 ## Interactions
@@ -60,5 +63,7 @@ Cette scène illustre l’utilisation d’A-Frame pour créer un environnement 3
 - gestion d’assets (GLB, textures, son, vidéo),
 - composants personnalisés en JavaScript,
 - interactions riches (clic, déplacement d’objets, contrôle média),
+- décor immersif avec ciel 360° et détails visuels (comme le poster de Bart sur la maison jaune),
+
 - le tout dans une seule page HTML, exécutable dans un navigateur via un simple serveur web.
 
