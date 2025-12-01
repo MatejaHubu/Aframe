@@ -2,7 +2,7 @@
 
 # README – Scène A-Frame « Springfield »
 
-Cette scène A-Frame met en place un environnement 3D interactif inspiré de Springfield, avec des modèles GLB, des animations, du son et de la vidéo, directement depuis un simple fichier HTML. :contentReference[oaicite:0]{index=0}
+Cette scène A-Frame met en place un environnement 3D interactif inspiré de Springfield, avec des modèles GLB, des animations, du son et de la vidéo, directement depuis un simple fichier HTML.
 
 ## Structure générale
 
